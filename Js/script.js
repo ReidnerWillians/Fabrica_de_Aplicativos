@@ -12,7 +12,7 @@ function calcular(event) {
 
     imc = peso / (altura * altura);
 
-    if(imc < 17) {
+    if(imc < 17){
         resultado = document.getElementById("resultado");
         resultado.innerHTML = "<br> Seu resultado foi: " + imc + "<br> Muito abaixo do peso";
     }
