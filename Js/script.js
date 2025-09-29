@@ -14,6 +14,6 @@ function calcular(event) {
 
     if(imc < 17) {
         resultado = document.getElementById("resultado");
-        resultado.innerHTML = "<br> Seu resultado foi: " + imc + "<br> Muito abaixo do peso"
+        resultado.innerHTML = "<br> Seu resultado foi: " + imc + "<br> Muito abaixo do peso";
     }
 }
