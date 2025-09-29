@@ -1,0 +1,74 @@
+TAGS SEMANTICAS HTML: para ajudar na compreensão e apresentação da pagina.
+
+header - Cabeçalho
+
+h1 - Título - recomendado usar um só h1 por página.
+h2 até h6 - subtítulos
+
+p - paragrafo
+
+img - imagem
+
+
+main - Pagina principal
+
+    section - seções na Pagina
+
+        article = divisoes dentro da section
+
+            section - pode ter dentro dos artigos tambem.
+
+
+
+figure - pode ser usada em qualquer lugar pra colocar uma 'img' dentro
+
+
+As letras próximas aos nomes dos arquivos no explorador do VS Code são indicadores de estado do controle de versão Git, como U (Untracked - arquivo não monitorado), M (Modified - arquivo modificado) e A (Added - arquivo adicionado ao controle de versão), que aparecem ao lado dos nomes dos arquivos para informar sobre suas alterações e estado no repositório. 
+
+Entendendo os indicadores Git:
+
+U (Untracked): Indica que o arquivo foi editado, mas ainda não foi adicionado ao controle de versão (Git).
+
+
+M (Modified): Apresenta arquivos que foram modificados e cujas alterações já foram rastreadas e registradas pelo Git.
+
+
+A (Added): Mostra arquivos que foram adicionados ao controle de versão através do git add, mas que ainda não foram commitados. 
+
+
+Por que esses indicadores aparecem?
+
+Esses indicadores são uma integração direta do VS Code com o sistema de controle de versão Git, que ajuda a gerenciar as mudanças nos seus arquivos de código. 
+
+Como os indicadores são exibidos?
+
+Eles aparecem ao lado dos nomes dos arquivos na barra lateral do explorador de arquivos é a barra que fica ao lado esquerdo do VS Code
+
+
+
+ARRAYS:
+
+variavel.indexOf = Mostra a posição do item dentro do array(lista)
+
+variavel.length = Mostra a quantidade de itens dentro do array(lista)
+
+variavel.push = Adiciona itens no final do array(lista)
+
+variavel.unshift = Adiciona itens no inicio do array (lista)
+
+variavel.shift = Remove o primeiro item do array (lista)
+
+variavel.pop = Remove o último item do array (lista)
+
+variavel.join = Mostra os itens dentro do array com um separador (simbolo) entre eles.
+
+
+LOOPS:
+
+while = enquanto x<10   x++
+
+for =  para x = 0 ,  x<=10, x++
+
+
+Switch  = Trocar = Caso
+
