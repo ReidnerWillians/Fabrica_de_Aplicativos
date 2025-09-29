@@ -16,4 +16,6 @@ function calcular(event) {
         resultado = document.getElementById("resultado");
         resultado.innerHTML = "<br> Seu resultado foi: " + imc + "<br> Muito abaixo do peso";
     }
+
+    console.log(resultado)
 }
