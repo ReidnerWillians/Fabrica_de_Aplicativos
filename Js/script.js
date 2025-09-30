@@ -14,10 +14,12 @@ function calcular(event){
     console.log(altura);
 
     imc = peso / (altura * altura);
-    resultado = document.getElementById("resultado");
-
     
-    if(imc < 17){        
-        resultado.innerHTML = "Seu resultado foi: " + imc + "<br> Muito abaixo do peso";
+
+    if (imc < 17) {
+        resultado = document.getElementById('resultado');
+
+        console.log
+        //resultado.innerHTML = "Seu resultado foi: " + imc + "<br> Muito abaixo do peso";
     }    
 }
