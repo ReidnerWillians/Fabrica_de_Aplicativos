@@ -72,3 +72,5 @@ for =  para x = 0 ,  x<=10, x++
 
 Switch  = Trocar = Caso
 
+
+

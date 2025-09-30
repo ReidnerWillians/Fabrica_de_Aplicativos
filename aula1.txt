@@ -3,6 +3,10 @@ var altura;
 var imc;
 var resultado;
 
+Para pegar o que foi digitado dentro de um input, usamos: document.getElementById ou document.getElementByQuerySelector
+
+Nunca esquecer de: sempre que houver um fomulário especificar uma div ou um paragrafo para onde o resultado da função ira aparecer.
+
 function calcular(event){
   event.preventDefault();
 
