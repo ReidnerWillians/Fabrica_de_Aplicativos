@@ -5,11 +5,14 @@ let buttonElement = document.querySelector('#app button');
 
 let tarefas = []
 
-function adicionarTarefa() {
-    if(inputElement.value === ' ') {
-        alert('Digite uma tarefa!');
+function adicionarTarefa(){
+    if(inputElement.value === ''){
+         alert('Digite alguma coisa')
         return false;
+    }else{
+        let novaTarefa = inputElement.value;
+        tarefas.push(novaTarefa);
+        inputElement.value = '';
     }
-
 }
-
+buttonElement.onclick = adicionarTarefa;
