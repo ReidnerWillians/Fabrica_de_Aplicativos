@@ -5,18 +5,6 @@ let buttonElement = document.querySelector('#app button');
 
 let tarefas = []
 
-function renderTarefas() {
-    listElement.innerHTML = '';
-
-    tarefas.map((todo) => {
-        let liElement = document.createElement('li');
-        let tarefaText = document.createTextNode(todo);
-
-        liElement.appendChild(tarefaText);
-        listElement.appendChild(liElement)
-    })
-}
-
 function adicionarTarefa() {
     if (inputElement.value === '') {
         alert('Digite alguma coisa')
@@ -26,6 +14,18 @@ function adicionarTarefa() {
         tarefas.push(novaTarefa);//adicionando valores ao input
         inputElement.value = '';//depois de adicionado, limpa o que foi adicionado
         renderTarefas();
-    }
+    }    
+}
+
+function renderTarefas() {
+    listElement.innerHTML = '';
+
+    tarefas.map((todo) => {
+        let liElement = document.createElement('li');
+        let tarefaText = document.createTextNode(todo);
+
+        liElement.appendChild(tarefaText);
+        listElement.appendChild(liElement)
+    })    
 }
 buttonElement.onclick = adicionarTarefa;
