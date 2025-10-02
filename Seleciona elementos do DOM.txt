@@ -1,0 +1,38 @@
+// Seleciona elementos do DOM
+let listElement = document.querySelector('#app ul');      // Seleciona a lista (ul) dentro do elemento com id 'app'
+let inputElement = document.querySelector('#app input');  // Seleciona o campo de entrada (input) dentro do elemento com id 'app'
+let buttonElement = document.querySelector('#app button'); // Seleciona o botão dentro do elemento com id 'app'
+
+// Array para armazenar as tarefas
+let tarefas = []
+
+// Função para renderizar as tarefas na tela
+function renderTarefas() {
+    listElement.innerHTML = ''; // Limpa todo o conteúdo da lista antes de renderizar
+
+    // Percorre o array de tarefas usando map
+    tarefas.map((todo) => {
+        let liElement = document.createElement('li');     // Cria um novo elemento <li>
+        let tarefaText = document.createTextNode(todo);   // Cria um nó de texto com o conteúdo da tarefa
+
+        liElement.appendChild(tarefaText);                // Adiciona o texto dentro do <li>
+        listElement.appendChild(liElement)                // Adiciona o <li> dentro da lista <ul>
+    })
+}
+
+// Função para adicionar uma nova tarefa
+function adicionarTarefa() {
+    // Verifica se o input está vazio
+    if (inputElement.value === '') {
+        alert('Digite alguma coisa')                     // Mostra alerta se estiver vazio
+        return false;                                     // Retorna false para interromper a execução
+    } else {
+        let novaTarefa = inputElement.value;             // Captura o texto digitado no input
+        tarefas.push(novaTarefa);                        // Adiciona a nova tarefa ao array
+        inputElement.value = '';                         // Limpa o campo de input
+        renderTarefas();                                 // Atualiza a lista na tela
+    }
+}
+
+// Adiciona o evento de clique ao botão
+buttonElement.onclick = adicionarTarefa;                 // Quando o botão for clicado, executa a função adicionarTarefa
